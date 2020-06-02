@@ -20,7 +20,7 @@ export default {
           {title: 'Designer', value: 'designer'},
           {title: 'Developer', value: 'developer'},
           {title: 'Editor', value: 'editor'},
-          {title: 'Manager', value: 'manager'}
+          {title: 'Researcher', value: 'researcher'}
         ]
       }
     }
