@@ -17,6 +17,7 @@ import figure from './objects/figure'
 import projectMember from './objects/projectMember'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
+import socialLink from './objects/socialLink'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,6 +33,7 @@ export default createSchema({
     projectMember,
     projectPortableText,
     simplePortableText,
+    socialLink,
     // The following are document types which will appear
     // in the studio.
     category,

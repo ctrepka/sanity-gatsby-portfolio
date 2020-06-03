@@ -29,18 +29,4 @@ export default {
             title: 'Right Column'
         },
     ],
-    preview: {
-        select: {
-            title: 'title',
-            publishedAt: 'publishedAt',
-            slug: 'slug',
-        },
-        prepare({ title = 'No title', slug = {} }) {
-            const path = `/${slug.current}/`
-            return {
-                title,
-            }
-        }
-    }
-
 }

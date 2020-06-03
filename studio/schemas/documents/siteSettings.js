@@ -1,3 +1,5 @@
+import socialLink from "../objects/socialLink";
+
 export default {
   name: 'siteSettings',
   type: 'document',
@@ -23,19 +25,7 @@ export default {
       name: 'socialLinks',
       type: 'array',
       title: 'Social Links',
-      of: [{type: 'object',
-      fields: [
-        {
-          title: 'Social Icon',
-          name: 'socialIcon',
-          type: 'image'
-        },
-        {
-          title: 'Social URL',
-          name: 'socialUrl',
-          type: 'url'
-        }
-      ]}],
+      of: [{ type: 'socialLink' }]
     },
     {
       name: 'description',
@@ -48,7 +38,7 @@ export default {
       type: 'array',
       title: 'Keywords',
       description: 'Add keywords that describes your portfolio.',
-      of: [{type: 'string'}],
+      of: [{ type: 'string' }],
       options: {
         layout: 'tags'
       }
@@ -58,7 +48,7 @@ export default {
       type: 'reference',
       description: 'Publish an author and set a reference to them here.',
       title: 'Author',
-      to: [{type: 'person'}]
+      to: [{ type: 'person' }]
     }
   ]
 }
