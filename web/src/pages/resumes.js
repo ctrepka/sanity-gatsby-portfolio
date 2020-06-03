@@ -10,23 +10,14 @@ import {mapEdgesToNodes, filterOutDocsWithoutSlugs} from '../lib/helpers'
 import {responsiveTitle1} from '../components/typography.module.css'
 
 export const query = graphql`
-  query ArchivePageQuery {
-    projects: allSanitySampleProject(
+  query resumePageQuery {
+    projects: allSanitySampleResume(
       limit: 12
-      sort: {fields: [publishedAt], order: DESC}
-      filter: {slug: {current: {ne: null}}, publishedAt: {ne: null}}
     ) {
       edges {
         node {
           id
-          mainImage {
-            asset {
-              _id
-            }
-            alt
-          }
           title
-          _rawExcerpt
           slug {
             current
           }
@@ -36,7 +27,7 @@ export const query = graphql`
   }
 `
 
-const ProjectsPage = props => {
+const ResumesPage = props => {
   const {data, errors} = props
   if (errors) {
     return (
@@ -46,16 +37,16 @@ const ProjectsPage = props => {
     )
   }
   const projectNodes =
-    data && data.projects && mapEdgesToNodes(data.projects).filter(filterOutDocsWithoutSlugs)
+    data && data.resumes && mapEdgesToNodes(data.resumes).filter(filterOutDocsWithoutSlugs)
   return (
     <Layout>
       <SEO title='Projects' />
       <Container>
-        <h1 className={responsiveTitle1}>Projects</h1>
+        <h1 className={responsiveTitle1}>Resumes</h1>
         {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>
     </Layout>
   )
 }
 
-export default ProjectsPage
+export default ResumesPage

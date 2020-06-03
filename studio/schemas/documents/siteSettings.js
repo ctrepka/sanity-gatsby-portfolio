@@ -22,7 +22,7 @@ export default {
     {
       name: 'socialLinks',
       type: 'array',
-      of: [{type: 'document',
+      of: [{type: 'object',
       fields: [
         {
           title: 'Social Icon',
