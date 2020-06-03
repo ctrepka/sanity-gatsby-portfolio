@@ -22,6 +22,7 @@ export default {
     {
       name: 'socialLinks',
       type: 'array',
+      title: 'Social Links',
       of: [{type: 'object',
       fields: [
         {
