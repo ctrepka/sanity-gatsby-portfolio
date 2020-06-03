@@ -17,11 +17,6 @@ export default {
       title: 'Title'
     },
     {
-      name: 'bio',
-      type: 'string',
-      title: 'Bio'
-    },
-    {
       name: 'socialLinks',
       type: 'array',
       title: 'Social Links',
