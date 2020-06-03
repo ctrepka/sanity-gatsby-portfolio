@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import BlockContent from './block-content'
 import Container from './container'
 

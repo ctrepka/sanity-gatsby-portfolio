@@ -5,9 +5,6 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Resume from '../components/resume'
-import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
-
-import { responsiveTitle1 } from '../components/typography.module.css'
 
 export const query = graphql`
 query {
