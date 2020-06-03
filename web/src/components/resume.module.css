@@ -1,0 +1,43 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.title {
+    composes: responsiveTitle1 from './typography.module.css';
+  }
+
+.grid {
+    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 36px;
+    @media (--media-max-medium) {
+        grid-template-columns: 400px 400px;
+        display: block;
+    }
+}
+
+.leftCol {
+    border-right: 1px solid #48dcba;
+    padding-right: 16px;
+    @media (--media-max-medium) {
+        border-right: none;
+        padding-right: none;
+
+    }
+}
+
+.rightCol {
+    padding-top: 4px;
+}
+
+.mainContent {
+    @nest & a {
+      color: var(--color-accent);
+  
+      @media (hover: hover) {
+        @nest &:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
