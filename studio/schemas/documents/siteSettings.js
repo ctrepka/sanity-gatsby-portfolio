@@ -15,6 +15,28 @@ export default {
       title: 'Title'
     },
     {
+      name: 'bio',
+      type: 'string',
+      title: 'Bio'
+    },
+    {
+      name: 'socialLinks',
+      type: 'array',
+      of: [{type: 'document',
+      fields: [
+        {
+          title: 'Social Icon',
+          name: 'socialIcon',
+          type: 'image'
+        },
+        {
+          title: 'Social URL',
+          name: 'socialUrl',
+          type: 'url'
+        }
+      ]}],
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',
