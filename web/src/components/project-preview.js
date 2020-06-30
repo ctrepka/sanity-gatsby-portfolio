@@ -20,11 +20,19 @@ function ProjectPreview (props) {
             alt={props.mainImage.alt}
           />
         )}
+        <div className={styles.dateRange}>
+          <span>{props.startedAt ? new Date(props.startedAt).toLocaleDateString() : 'null'} - {props.endedAt ? new Date(props.endedAt).toLocaleDateString() : 'ongoing'}</span>
+        </div>
       </div>
       <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
       {props._rawExcerpt && (
         <div className={styles.excerpt}>
           <BlockText blocks={props._rawExcerpt} />
+          <div>
+            {props.categories ? props.categories.map( (c,i) => {
+              return <span className={styles.category}>{c.title}</span>
+            }) : null }
+          </div>
         </div>
       )}
     </Link>
