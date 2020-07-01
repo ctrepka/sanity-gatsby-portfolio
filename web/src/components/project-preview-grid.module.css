@@ -31,6 +31,15 @@
   }
 }
 
+.projectPreviewCard {
+  padding: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #28282f, #212128);
+  box-shadow:  8px 8px 16px #1c1c21, 
+              -8px -8px 16px #2e2e37;
+}
+
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 1rem;

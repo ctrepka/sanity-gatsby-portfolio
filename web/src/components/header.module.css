@@ -2,8 +2,12 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  position: relative;
   z-index: 100;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: #25252c;
+  z-index: 999;
 }
 
 .wrapper {
@@ -12,6 +16,7 @@
   max-width: 960px;
   padding: 1em;
   display: flex;
+  flex: auto;
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;

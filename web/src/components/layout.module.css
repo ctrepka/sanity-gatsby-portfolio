@@ -5,6 +5,8 @@
   background: var(--color-white);
   min-height: calc(100% - 73px - 120px);
 
+  padding-top: 96px;
+
   @media (--media-min-small) {
     min-height: calc(100% - 88px - 150px);
   }
