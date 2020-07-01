@@ -41,7 +41,7 @@
   transition: all .5s linear;
 }
 
-.projectPreviewCard {
+.projectPreviewCard:hover {
   transform: scale(1.02);
 }
 
