@@ -9,7 +9,7 @@
 
 .mainImage {
   position: relative;
-  background: #eee;
+  background: #25252c;
 
   @nest & img {
     top: 0;
@@ -18,6 +18,14 @@
     max-height: 600px;
     vertical-align: top;
     object-fit: cover;
+  }
+
+  @media (--media-min-large) {
+    width: 68vw;
+    border-radius: 0vw 2vw 2vw 0vw;
+    box-shadow: 8px 8px 16px #1c1c21, -8px -8px 16px #2e2e37;
+    border: solid 1px #ffffff00;
+    overflow: hidden;
   }
 }
 
@@ -44,6 +52,15 @@
 }
 
 .metaContent {
+  @media (--media-min-large){
+    position: fixed;
+    top: 8vw;
+    right: 4vw;
+    background: #25252cfa;
+    border-radius: 8px;
+    padding: 8px;
+    max-width: 24vw;
+  }
 }
 
 .publishedAt {

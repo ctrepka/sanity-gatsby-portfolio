@@ -36,9 +36,9 @@
   padding: 2px 16px;
   border-radius: 24px;
   margin: 2px;
-  border: solid 1px #eee;
   color: #eee;
   display: inline-flex;
+  background: #2e2e37;
 }
 
 .dateRange {

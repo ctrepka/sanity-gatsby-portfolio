@@ -15,6 +15,8 @@ export const query = graphql`
         _id
         title
       }
+      startedAt
+      endedAt
       relatedProjects {
         title
         _id

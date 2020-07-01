@@ -38,6 +38,11 @@
   background: linear-gradient(145deg, #28282f, #212128);
   box-shadow:  8px 8px 16px #1c1c21, 
               -8px -8px 16px #2e2e37;
+  transition: all .5s linear;
+}
+
+.projectPreviewCard {
+  transform: scale(1.02);
 }
 
 .browseMoreNav {
