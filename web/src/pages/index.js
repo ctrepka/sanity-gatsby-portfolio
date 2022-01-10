@@ -98,6 +98,7 @@ export const query = graphql`
           categories {
             title
           }
+          publishedAt
         }
       }
     }
